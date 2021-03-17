@@ -22,9 +22,13 @@
       </div>
       <div class="col2">
         <div v-if="posts.length">
+          <!--Display the posts using v-for -->
           <div v-for="post in posts" :key="post.id" class="post">
+            <!--Display username for posts -->
             <h5>{{ post.userName }}</h5>
+            <!--Include data post was created-->
             <span>{{ post.createdOn | formatDate }}</span>
+            <!--Display content of the post -->
             <p>{{ post.content | trimLength }}</p>
             <ul>
               <li><a @click="toggleCommentModal(post)">comments {{ post.comments }}</a></li>
@@ -90,7 +94,7 @@ export default {
       postComments: []
     }
   },
-  //Use mapState to pull userProfile object into dashboard component
+  //Use mapState to pull userProfile and posts objects into dashboard component
   computed: {
     ...mapState(['userProfile', 'posts'])
   },
