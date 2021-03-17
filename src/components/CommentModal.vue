@@ -1,4 +1,5 @@
 <template>
+<!--Create comment modal component -->
   <div class="c-modal">
     <div class="c-container">
       <a @click="$emit('close')">close</a>

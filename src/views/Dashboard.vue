@@ -1,6 +1,7 @@
 <template>
     <!-- Dashboard Component-->
   <div id="dashboard">
+    <!--Use a transition fade for the show or hide animation of the comment modal -->
     <transition name="fade">
       <CommentModal v-if="showCommentModal" :post="selectedPost" @close="toggleCommentModal()"></CommentModal>
     </transition>
@@ -26,11 +27,12 @@
           <div v-for="post in posts" :key="post.id" class="post">
             <!--Display username for posts -->
             <h5>{{ post.userName }}</h5>
-            <!--Include data post was created-->
+            <!--Include and format date post was created-->
             <span>{{ post.createdOn | formatDate }}</span>
-            <!--Display content of the post -->
+            <!--Display content of the post and format the length -->
             <p>{{ post.content | trimLength }}</p>
             <ul>
+              <!--Allow for users to interact with eachother through comments, likes, and viewing the full post. Add click event to show/hide modal -->
               <li><a @click="toggleCommentModal(post)">comments {{ post.comments }}</a></li>
               <li><a @click="likePost(post.id, post.likes)">likes {{ post.likes }}</a></li>
               <li><a @click="viewPost(post)">view full post</a></li>
@@ -49,6 +51,7 @@
         <div class="p-container">
           <a @click="closePostModal()" class="close">close</a>
           <div class="post">
+            <!--Display post username, date created on, and full content -->
             <h5>{{ fullPost.userName }}</h5>
             <span>{{ fullPost.createdOn | formatDate }}</span>
             <p>{{ fullPost.content }}</p>
@@ -57,6 +60,7 @@
               <li><a>likes {{ fullPost.likes }}</a></li>
             </ul>
           </div>
+          <!--Display comments on the post with corresponding date and username -->
           <div v-show="postComments.length" class="comments">
             <div v-for="comment in postComments" :key="comment.id" class="comment">
               <p>{{ comment.userName }}</p>
@@ -104,6 +108,7 @@ export default {
       this.$store.dispatch('createPost', { content: this.post.content })
       this.post.content = ''
     },
+    //Make method to show/hide modal
     toggleCommentModal(post) {
       this.showCommentModal = !this.showCommentModal
 
@@ -114,6 +119,7 @@ export default {
         this.selectedPost = {}
       }
     },
+    //count how many likes a post recieves
     likePost(id, likesCount) {
       this.$store.dispatch('likePost', { id, likesCount })
     },
@@ -134,6 +140,7 @@ export default {
       this.showPostModal = false
     }
   },
+  //Apply filters to format the date and trim the posting length
   filters: {
     formatDate(val) {
       if (!val) { return '-' }
