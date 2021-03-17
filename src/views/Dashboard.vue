@@ -123,6 +123,7 @@ export default {
     likePost(id, likesCount) {
       this.$store.dispatch('likePost', { id, likesCount })
     },
+    //create viewPost and closePost toggle methods
     async viewPost(post) {
       const docs = await commentsCollection.where('postId', '==', post.id).get()
 
