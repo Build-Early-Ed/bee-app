@@ -1,5 +1,5 @@
 <template>
-    <!-- Dashboard Component-->
+    <!-- Dashboard View-->
   <div id="dashboard">
     <!--Use a transition fade for the show or hide animation of the comment modal -->
     <transition name="fade">

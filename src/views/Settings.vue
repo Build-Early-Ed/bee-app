@@ -1,4 +1,5 @@
 <template>
+<!--Settings View -->
   <section id="settings">
     <div class="col1">
       <h3>Settings</h3>
@@ -22,6 +23,7 @@
 </template>
 
 <script>
+//import mapState to reference userProfile
 import { mapState } from 'vuex'
 
 export default {
@@ -36,6 +38,7 @@ export default {
     ...mapState(['userProfile'])
   },
   methods: {
+    //Create updateProfile method to allow users to change their title and name
     updateProfile() {
       this.$store.dispatch('updateProfile', {
         name: this.name !== '' ? this.name : this.userProfile.name,

@@ -109,6 +109,7 @@ const store = new Vuex.Store({
         likes: post.likesCount + 1
       })
     },
+    //allow users to update their profiles
     async updateProfile({ dispatch }, user) {
       const userId = fb.auth.currentUser.uid
       // update user object
