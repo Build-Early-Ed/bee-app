@@ -6,7 +6,7 @@ import { auth } from './firebase'
 import './assets/scss/app.scss'
 
 Vue.config.productionTip = false
-
+//dispatch an action on the page reload if a user is logged in
 let app
 auth.onAuthStateChanged(user => {
   if (!app) {
