@@ -4,18 +4,19 @@
     <div class="col1">
       <h3>Settings</h3>
       <p>Update your profile</p>
-
+      <!--Show Profile Updated when success -->
       <transition name="fade">
         <p v-if="showSuccess" class="success">profile updated</p>
       </transition>
 
       <form @submit.prevent>
+      <!--Display User Name -->
         <label for="name">Name</label>
         <input v-model.trim="name" type="text" :placeholder="userProfile.name" id="name" />
-
+      <!--Display Job Title of User -->
         <label for="title">Job Title</label>
         <input v-model.trim="title" type="text" :placeholder="userProfile.title" id="title" />
-
+      <!--Display Update Profile Button -->
         <button @click="updateProfile()" class="button">Update Profile</button>
       </form>
     </div>
