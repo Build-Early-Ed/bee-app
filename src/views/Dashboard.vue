@@ -1,4 +1,5 @@
 <template>
+    <!-- Dashboard Component-->
   <div id="dashboard">
     <transition name="fade">
       <CommentModal v-if="showCommentModal" :post="selectedPost" @close="toggleCommentModal()"></CommentModal>
@@ -8,10 +9,12 @@
         <div class="profile">
           <h5>{{ userProfile.name }}</h5>
           <p>{{ userProfile.title }}</p>
+              <!-- Add the create post method on the submit button-->
           <div class="create-post">
             <p>create a post</p>
             <form @submit.prevent>
               <textarea v-model.trim="post.content"></textarea>
+                  <!-- Disable the button until the user has entered content-->
               <button @click="createPost()" :disabled="post.content === ''" class="button">post</button>
             </form>
           </div>
@@ -63,6 +66,7 @@
   </div>
 </template>
 
+    <!-- Give users ability to make posts -->
 <script>
 import { commentsCollection } from '@/firebase'
 import { mapState } from 'vuex'
@@ -75,6 +79,7 @@ export default {
   },
   data() {
     return {
+      //update data object to allow users to post content
       post: {
         content: ''
       },
@@ -85,10 +90,12 @@ export default {
       postComments: []
     }
   },
+  //Use mapState to pull userProfile object into dashboard component
   computed: {
     ...mapState(['userProfile', 'posts'])
   },
   methods: {
+  //Make the method for users to post in the board
     createPost() {
       this.$store.dispatch('createPost', { content: this.post.content })
       this.post.content = ''

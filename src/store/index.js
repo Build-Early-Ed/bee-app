@@ -78,6 +78,7 @@ const store = new Vuex.Store({
       // redirect to login view
       router.push('/login')
     },
+    //allow users to post
     async createPost({ state, commit }, post) {
       // create post in firebase
       await fb.postsCollection.add({
