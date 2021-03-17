@@ -12,6 +12,9 @@
           <li>
             <router-link to="/settings">Settings</router-link>
           </li>
+          <li>
+            <router-link to="/about">About</router-link>
+          </li>
           <li><a @click="logout()">logout</a></li>
         </ul>
       </div>
