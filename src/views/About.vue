@@ -1,5 +1,5 @@
 <template>
-  <div id="about">
+  <div id="About">
 <section>
       <div class=container>
             <H3>Our Mission</H3>
@@ -15,13 +15,8 @@
 </template>
 
 <script>
-import SiteNav from '@/components/SiteNav'
 
-export default {
-  components: {
-    SiteNav
-  }
-}
+
 </script>
 
 <style lang="scss" scoped>
