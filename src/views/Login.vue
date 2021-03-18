@@ -1,47 +1,61 @@
 <template>
+  <!--Login View -->
   <div id="login">
+  <!--Toggle Password Reset -->
     <PasswordReset v-if="showPasswordReset" @close="togglePasswordReset()"></PasswordReset>
     <section>
+        <!--App name and tagline -->
       <div class="col1">
         <h1>Build Early Ed</h1>
         <p>Welcome to the Build Early Ed <a href="https://buildearlyed.org/" target="_blank">Web App </a>that's Connecting New Mexicans to Head Start</p>
       </div>
+        <!--Login Section -->
       <div :class="{ 'signup-form': !showLoginForm }" class="col2">
         <form v-if="showLoginForm" @submit.prevent>
           <h1>Welcome Back</h1>
+           <!--Insert Email -->
           <div>
             <label for="email1">Email</label>
             <input v-model.trim="loginForm.email" type="text" placeholder="you@email.com" id="email1" />
           </div>
+           <!--Insert Password -->
           <div>
             <label for="password1">Password</label>
             <input v-model.trim="loginForm.password" type="password" placeholder="******" id="password1" />
           </div>
+           <!--Allow users to click on Login, Password Reset, and Create an Account -->
           <button @click="login()" class="button">Log In</button>
           <div class="extras">
             <a @click="togglePasswordReset()">Forgot Password</a>
             <a @click="toggleForm()">Create an Account</a>
           </div>
         </form>
+       <!--Create an Account Form -->
         <form v-else @submit.prevent>
           <h1>Get Started</h1>
+          <!--Allow users to input their name, include placeholder text -->
           <div>
             <label for="name">Name</label>
             <input v-model.trim="signupForm.name" type="text" placeholder="Early Ed Trailblazer" id="name" />
           </div>
+          <!--Allow users to input their title, include placeholder text -->
           <div>
             <label for="title">Title</label>
             <input v-model.trim="signupForm.title" type="text" placeholder="Company" id="title" />
           </div>
+          <!--Allow users to insert their email-->
           <div>
             <label for="email2">Email</label>
             <input v-model.trim="signupForm.email" type="text" placeholder="you@email.com" id="email2" />
           </div>
           <div>
+          <!--Allow users to insert their password-->
             <label for="password2">Password</label>
             <input v-model.trim="signupForm.password" type="password" placeholder="min 6 characters" id="password2" />
           </div>
+          <!--Sign Up Button-->
           <button @click="signup()" class="button">Sign Up</button>
+          <!--Back to log in action-->
           <div class="extras">
             <a @click="toggleForm()">Back to Log In</a>
           </div>
@@ -75,18 +89,22 @@ export default {
     }
   },
   methods: {
+//create a method for login form
     toggleForm() {
       this.showLoginForm = !this.showLoginForm
     },
+    // create a method for users to reset password
     togglePasswordReset() {
       this.showPasswordReset = !this.showPasswordReset
     },
+    //create a method for users to login
     login() {
       this.$store.dispatch('login', {
         email: this.loginForm.email,
         password: this.loginForm.password
       })
     },
+    //create a method for users to sign up
     signup() {
       this.$store.dispatch('signup', {
         email: this.signupForm.email,
