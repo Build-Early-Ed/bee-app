@@ -21,7 +21,7 @@ Gabriel Fosse has a background in ethical hacking and linux systems administrati
 
 Languages and Libraries
 
-Our web app and map is powered by HTML, CSS, Mapbox, Python, Pandas, Geopandas, XGBoost, Matplotlib, Scikitlearn, Folium, Shapely, and Numpy.
+Our web app and map is powered by Vue.js, Firebase, HTML, CSS, JavaScript, Mapbox, Python, Pandas, Geopandas, XGBoost, Matplotlib, Scikitlearn, Folium, Shapely, and Numpy.
 Security
 
 Our web page has an SSL certificate and uses HTTPS encryption. See more on our privacy page.
