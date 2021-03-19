@@ -1,0 +1,13 @@
+[
+{ "name": "Alija Blackwell",
+    "id": "Creative Technologist",
+    "img-src": "src/assets/images/headshot.png"
+
+},
+{
+    "name": "Gabriel Fosse",
+    "id": "Data Scientist",
+    "img-src": "src/assets/images/unnamed.png"
+}
+
+]
