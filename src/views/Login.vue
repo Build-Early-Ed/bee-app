@@ -7,7 +7,7 @@
         <!--App name and tagline -->
       <div class="col1">
         <h1>Build Early Ed</h1>
-        <p>Welcome to Build Early Ed the <a href="https://info.buildearlyed.org/" target="_blank">App </a>that's Connecting New Mexicans to opportunities in Early Childhood Education</p>
+        <p>Welcome to Build Early Ed, the <a href="https://info.buildearlyed.org/" target="_blank">app </a> connecting New Mexicans to opportunities in Early Childhood Education</p>
       </div>
         <!--Login Section -->
       <div :class="{ 'signup-form': !showLoginForm }" class="col2">
