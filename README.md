@@ -8,6 +8,7 @@ info.buildearlyed.org
 Build Early Ed is a web application connecting New Mexicans to opportunities in early childhood education. Using a map powered by data science, community members can identify their eligibility to enroll their child in Head Start or apply for grant funding for Head Start programs based on economic and demographic characteristics. Build Early Ed connects residents to opportunities to advance their career in early childhood education by centralizing academic and professional opportunities in the field. We also connect New Mexicans to local organizations and resources to support advocacy for early childhood education opportunities. Together, we can build a stronger continuum of care for youth in New Mexico.
 
 Demonstration of our app on a mobile device: https://youtu.be/HBI0_-YCPO0
+Documentation of our live map https://colab.research.google.com/drive/1lMTG3axFE9JDObGl5iXGHNvLb2dSpSLz?usp=sharing
 
 Below are screenshots of the app:
 
