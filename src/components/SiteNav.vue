@@ -2,7 +2,7 @@
   <header>
     <section>
       <div class="col1">
-        <router-link to="/">
+        <router-link to="https://info.buildearlyed.org/">
           <h3>Build Early Ed</h3>
         </router-link>
         <ul class="inline">
