@@ -7,7 +7,7 @@
         </router-link>
         <ul class="inline">
           <li>
-            <router-link to="/jobboard">jobboard</router-link>
+            <router-link to="/">JobBoard</router-link>
           </li>
           <li>
             <router-link to="/settings">Settings</router-link>

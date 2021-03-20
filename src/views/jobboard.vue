@@ -74,6 +74,8 @@
   </div>
 </template>
 
+<!-- We can expand the functionality of the Job Board by allowing users to upload files including an avatar, resume, survey or job summary. Creating a dashboard for users to see how many new messages or postings are available since their previous login is another feature to continue expanding on capabilities. -->
+
     <!-- Give users ability to make posts -->
 <script>
 import { commentsCollection } from '@/firebase'
