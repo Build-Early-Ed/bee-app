@@ -65,7 +65,7 @@
   </div>
 </template>
 
-<!--To expand on the log in features, create dual log-in portals for community members and organizations to customize features and user privileges for different users as they interact with the site.-->
+<!--To expand on the log in features, create dual log-in portals for community members and organizations to customize features and user privileges for different users as they interact with the site. To strengthen security for users, leverage Firebase security rules to build user-based and role-based access systems to ensure the safety of users' data, whether user is a community organization or individual. Use authentication rules to confirm the identify of users requesting access to Build Early Ed data. Include user information in rules to control access to data based on user identity. Ensure users can only read and write their own data in requests. -->
 
 <script>
 import PasswordReset from '@/components/PasswordReset'
