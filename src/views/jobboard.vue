@@ -1,6 +1,6 @@
 <template>
     <!-- Job Board View-->
-  <div id="jobboard">
+  <div id="JobBoard">
     <!--Use a transition fade for the show or hide animation of the comment modal -->
     <transition name="fade">
       <CommentModal v-if="showCommentModal" :post="selectedPost" @close="toggleCommentModal()"></CommentModal>
