@@ -22,6 +22,7 @@
     </div>
   </section>
 </template>
+      <!--To expand the functionality of user settings, we may create separate portals for organizations and community members as well as integrate options to upload files for their avatars and postings. Consider options to increase user security through their personal settings options to opt out of certain data collection or adjust the visual layout of the site to align with user preferences.-->
 
 <script>
 //import mapState to reference userProfile
