@@ -7,7 +7,7 @@
         <!--App name and tagline -->
       <div class="col1">
         <h1>Build Early Ed</h1>
-        <p>Welcome to Build Early Ed the<a href="https://info.buildearlyed.org/" target="_blank">App </a>that's Connecting New Mexicans to Head Start</p>
+        <p>Welcome to Build Early Ed the<a href="https://info.buildearlyed.org/" target="_blank">App </a>that's Connecting New Mexicans to opportunities in Early Childhood Education</p>
       </div>
         <!--Login Section -->
       <div :class="{ 'signup-form': !showLoginForm }" class="col2">
@@ -64,6 +64,8 @@
     </section>
   </div>
 </template>
+
+<!--To expand on the log in features, create dual log-in portals for community members and organizations to customize features and user privileges for different users as they interact with the site.-->
 
 <script>
 import PasswordReset from '@/components/PasswordReset'
