@@ -18,7 +18,7 @@
 <section>
     <b-container class= "container mt-40">
         <h3>Our Team</h3>
-        <p>Alija Blackwell, is a Creative Technologist with a background in community planning, digital media, and data science. Alija uses strategic foresight to design immersive installation art and uses machine learning for mission-driven organizational equity analysis.</p>
+        <p>Alija Blackwell, is a Creative Technologist with a background in community planning, digital media, and data science. Alija uses strategic foresight and machine learning for design to support mission-driven organizations with equity analysis.</p>
 
 <p>Gabriel Fosse has a background in ethical hacking and linux systems administration. After completing the Data Science program he has been working as a freelancer using neural networks for sound classification and analysis. </p>
         <b-row align-v="center"> 
