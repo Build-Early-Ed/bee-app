@@ -74,7 +74,7 @@
   </div>
 </template>
 
-<!-- We can expand the functionality of the Job Board by allowing users to upload files including an avatar, resume, survey or job summary. Creating a dashboard for users to see how many new messages or postings are available since their previous login is another feature to continue expanding on capabilities. -->
+<!-- We can expand the functionality of the Job Board by allowing users to upload files including an avatar, resume, survey or job summary. Creating a dashboard for users to see how many new messages or postings are available since their previous login is another feature to continue expanding on capabilities. To further bolster security efforts, consider content moderation infrastructure and firebase security rules to ensure higher security environment and authentication for user data.-->
 
     <!-- Give users ability to make posts -->
 <script>
