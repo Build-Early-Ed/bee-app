@@ -1,5 +1,6 @@
 # bee-app
-Build Early Ed
+
+## Build Early Ed
 
 buildearlyed.org
 
@@ -13,22 +14,24 @@ Below are screenshots of the app:
 ![nmbee_iphone_ls](https://user-images.githubusercontent.com/67302599/111854039-ddcb3280-88e2-11eb-8ebb-40c9545da413.png)
 ![nmbee_map](https://user-images.githubusercontent.com/67302599/111854042-df94f600-88e2-11eb-8077-6bb371f84bd4.png)
 
-About
+## About
 
 Build Early Ed began as a data science project with a goal to use open datasets to identify which neighborhoods in NM were underserved by and eligible for a Head Start Center (https://www.youtube.com/watch?v=1dDkCk3ZhNk). We created a companion web app to share this information with the people of NM to identify the nearest Head Start location, see if they qualify for services, and if there is not a nearby location, use our site to gauge how likely their neighborhood is to qualify for a Head Start location and direct them to resources to apply for one.
 
-The Team
+## The Team
 
-Alija Blackwell
+### Alija Blackwell
 
 Alija is a Creative Technologist with a background in community planning, digital media, and data science. Since completing the Data Science program, Alija has been designing immersive installation art and using machine learning for organizational equity analysis.
 
+### Gabriel Fosse
 Gabriel Fosse has a background in ethical hacking and linux systems administration. After completing the Data Science program he has been working as a freelancer using neural networks for sound classification and analysis.
 
-Languages and Libraries
+## Languages and Libraries
 
 Our web app and map is powered by Vue.js, Firebase, HTML, CSS, JavaScript, Mapbox, Python, Pandas, Geopandas, XGBoost, Matplotlib, Scikitlearn, Folium, Shapely, and Numpy.
-Security
+
+## Security
 
 Our web page has an SSL certificate and uses HTTPS encryption. See more on our privacy page.
 
