@@ -2,20 +2,19 @@
   <div id="About">
             <!--About Page Text-->
 <section>
-    <!--Our Mission Text-->
+    <!--About Job Board Text-->
       <b-container class= "container mt-40">
-            <h3>Our Mission</h3>
-            <p>Build Early Ed strengthens the continuum of care for youth by connecting New Mexicans to
-                Head Start programs. We help New Mexicans enroll their children into Head Start, earn higher
-                education credentials, and connect with local advocates to build Head Start programs in their
-                community. Together, we can build the future of early childhood education.
+            <h3>Job Board</h3>
+            <p>Build Early Ed welcomes current and aspiring early education professionals to leverage our platform to build their network. We connect members to career opportunities in the field to foster economic development statewide.
+            Use your profile to create posts and interact with colleagues using the comment and like features. Ultimately, we aim to create a high quality early education system for youth by investing in the professional development of our members. Learn more about <a href="https://build-early-ed-webapp-h4lzp.ondigitalocean.app/" target="_blank">Build Early Ed and Head Start</a> today.
             </p>
       </b-container>  
 </section>
-    <!--End Our Mission Text-->
+    <!--End About Job Board Text-->
 
     <!--Our Team Text-->
 <section>
+
     <b-container class= "container mt-40">
         <h3>Our Team</h3>
         <p>Alija Blackwell, is a Creative Technologist with a background in community planning, digital media, and data science. Alija uses strategic foresight and machine learning for design to support mission-driven organizations with equity analysis.</p>
