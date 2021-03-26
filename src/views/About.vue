@@ -4,7 +4,7 @@
 <section>
     <!--About Job Board Text-->
       <b-container class= "container mt-40">
-            <h3>Job Board</h3>
+            <h3>Empowering the Early Education Workforce</h3>
             <p>Build Early Ed welcomes current and aspiring early education professionals to leverage our platform to build their network. We connect members to career opportunities in the field to foster economic development statewide.
             Use your profile to create posts and interact with colleagues using the comment and like features. Ultimately, we aim to create a high quality early education system for youth by investing in the professional development of our members. Learn more about <a href="https://build-early-ed-webapp-h4lzp.ondigitalocean.app/" target="_blank">Build Early Ed and Head Start</a> today.
             </p>
